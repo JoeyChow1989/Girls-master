@@ -84,7 +84,6 @@ public class MainActivity extends AppCompatActivity
         switch (id) {
             case R.id.nav_new:
                 changeFragment(new NewFragment());
-
                 break;
             case R.id.nav_xingan:
                 changeFragment(new XinGanFragment());

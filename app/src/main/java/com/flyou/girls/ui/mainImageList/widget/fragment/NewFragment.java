@@ -79,8 +79,6 @@ public class NewFragment extends BaseFragment implements ImageListView, SwipeRef
             default:
                 mType = Constant.NEW;
                 break;
-
-
         }
         mPersenter.startGetImageList(mType, mCurrentPage);
     }
