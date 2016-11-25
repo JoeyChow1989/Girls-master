@@ -80,7 +80,6 @@ public class ImageDetialActivity extends AppCompatActivity implements View.OnCli
         mLoading = (TextView) findViewById(R.id.laoding);
         mImageView = (ImageView) findViewById(R.id.imageView);
         mDownLoad.setOnClickListener(this);
-
     }
 
     @Override
@@ -94,10 +93,7 @@ public class ImageDetialActivity extends AppCompatActivity implements View.OnCli
                         File file = new File(Environment.getExternalStorageDirectory() + File.separator+"Girls", fileName);
 
                         if (Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)) {
-
                             try {
-
-
                                 if (!file.exists()){
                                     file.mkdirs();
                                 }
@@ -120,7 +116,6 @@ public class ImageDetialActivity extends AppCompatActivity implements View.OnCli
                                     }
                                     is.close();
                                     fos.close();
-
                                 }
                             } catch (Exception e) {
                                 e.printStackTrace();
@@ -132,6 +127,7 @@ public class ImageDetialActivity extends AppCompatActivity implements View.OnCli
 
                     }
                 });
+
                 Subscriber<String> subscriber = new Subscriber<String>() {
                     @Override
                     public void onCompleted() {

@@ -29,7 +29,6 @@ public class ImageListPersenterImpl implements ImageListModelImpl.GetImageListen
         this.imageListModel=new ImageListModelImpl();
     }
 
-
     @Override
     public void onSuccess(List<ImageListDomain> imageList) {
         imageListView.receiveImageList(imageList);

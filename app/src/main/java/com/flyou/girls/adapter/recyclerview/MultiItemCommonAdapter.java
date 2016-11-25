@@ -40,5 +40,4 @@ public abstract class MultiItemCommonAdapter<T> extends CommonAdapter<T>
         setListener(parent, holder, viewType);
         return holder;
     }
-
 }
