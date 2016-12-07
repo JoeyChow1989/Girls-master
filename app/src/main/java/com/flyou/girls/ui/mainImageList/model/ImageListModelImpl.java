@@ -84,8 +84,6 @@ public class ImageListModelImpl implements ImageListModel {
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(subscriber);
-
-
     }
 
     public interface GetImageListenter {

@@ -25,5 +25,4 @@ public interface ImageListView {
     void showLoadFaild( Exception e);
 
     void receiveImageList(List<ImageListDomain> imageListDomains);
-
 }
